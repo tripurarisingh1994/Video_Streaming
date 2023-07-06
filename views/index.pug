@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 Video Upload
+    form(action="/videos" method="post" enctype="multipart/form-data")
+      input(type="file" name="videoFile" accept="video/*")
+      button(type="submit") Upload
+
